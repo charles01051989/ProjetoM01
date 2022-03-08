@@ -20,3 +20,5 @@ if (sim==0) {
 }else{
     console.log(`Você triunfa de maneira inquestionável e seus feitos serão lembrados por muitas gerações!`);
 }
+
+console.log("ok")
