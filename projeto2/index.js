@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')()
 
-
+console.log("          <<<<JOKENPÔ>>>>       \n\n\n");
 const listaDeOpcoes = ["Pedra","Papel","Tesoura"];
 let vitoriaM = 0;
 let vitoriaS = 0;
@@ -10,7 +10,7 @@ numeroDerodas = +prompt(`Escolha a quantidade de rodadas: `)
 
 for (let rodadas = 0; rodadas < numeroDerodas; rodadas++) {
     
-console.log(`-Digite [0] para ${listaDeOpcoes[0]}\n-Digite [1] para ${listaDeOpcoes[1]}\n-Digite [2] para ${listaDeOpcoes[2]}\n`)
+console.log(`\n-Digite [0] para ${listaDeOpcoes[0]}\n-Digite [1] para ${listaDeOpcoes[1]}\n-Digite [2] para ${listaDeOpcoes[2]}\n`)
 escolhaSua = +prompt("Digite uma das opções acima: ")
 
 //ESCOLHAS DAS OPÇÕES
@@ -26,7 +26,7 @@ while (escolhaSua!=0 &&escolhaSua!=1 && escolhaSua!=2) {
 let escolhaMaquina = Math.floor(Math.random()*3)
 
 if (escolhaSua == 0) {
-    console.log(`Você escolheu ${listaDeOpcoes[0]}\n`);
+    console.log(`\nVocê escolheu ${listaDeOpcoes[0]}\n`);
 }
 if (escolhaSua == 1) {
     console.log(`Você escolheu ${listaDeOpcoes[1]}\n`);
@@ -79,6 +79,8 @@ console.log(`Escore parcial ${vitoriaM} x ${vitoriaS}\n`);
 }
 
 // ESCORE FINAL
+console.log("          <<<<FIM DO JOGO>>>>       \n\n\n");
+
 if (vitoriaS>vitoriaM){
     console.log("VOCẼ É O CAMPEÃO");
     
