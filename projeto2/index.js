@@ -65,7 +65,7 @@ if (escolhaSua==2&&escolhaMaquina==1) {
     
 if (escolhaSua==2&&escolhaMaquina==0) {
     console.log(`[${listaDeOpcoes[2]} x ${listaDeOpcoes[0]}]\n Que pena, você PERDEU!\n `);
-    vitoriaM
+    vitoriaM++
 }    
 if (escolhaSua==1&&escolhaMaquina==0) {
     console.log(`[${listaDeOpcoes[1]} x ${listaDeOpcoes[0]}]\n Boa, você GANHOU!\n `);
@@ -75,7 +75,7 @@ if (escolhaSua==1&&escolhaMaquina==2) {
     console.log(`[${listaDeOpcoes[1]} x ${listaDeOpcoes[2]}]\n Que pena, você PERDEU!\n `);
     vitoriaM++
 }
-console.log(`Escore parcial ${vitoriaM} x ${vitoriaS}\n`);    
+console.log(`Escore parcial MÁQUINA ${vitoriaM} x ${vitoriaS} JOGADOR\n`);    
 }
 
 // ESCORE FINAL
@@ -89,3 +89,4 @@ if (vitoriaS>vitoriaM){
 }else{
     console.log("VOCÊ PERDEU O JOGO");
 }
+
